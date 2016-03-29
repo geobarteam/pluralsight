@@ -5,6 +5,12 @@
         .module('app.customers')
         .controller('CustomerDetail', CustomerDetail);
 
+    function test() { 
+        var x = 1; 
+        var y = 2;
+        return x + y;
+    }
+    
     CustomerDetail.$inject = ['$stateParams', '$window', 'dataservice', 'logger'];
     /* @ngInject */
     function CustomerDetail($stateParams, $window, dataservice, logger) {
